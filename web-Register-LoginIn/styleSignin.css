@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #eeeeee;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0;
+    height: 490px;
+    width: 450px;
+    -webkit-box-shadow: 0px 0px 33px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 33px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 33px 7px rgba(0, 0, 0, 0.75);
+  }
+
+  .register {
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fa {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+  }
+
+  .info {
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .input {
+    width: 340px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    height: 45px;
+    padding-left: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  .infoRegister {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+  }
+
+  .registerLink {
+    text-decoration: none;
+  }

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="styleRegister.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="container">
+    <div class="main">
+      <h1 class="register">REGISTER</h1>
+      <div class="icons">
+        <a href="https://tr-tr.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.google.com" class="fa fa-google" style="color: red;"></a>
+        <a href="https://www.yahoo.com" class="fa fa-yahoo" style="color: purple;"></a>
+      </div>
+      <h3 class="info">or use your email address:</h3>
+      <div class="inputs form-group">
+        <input type="text" class="input form-control" id="name" placeholder="First Name">
+        <input  type="email" class="input form-control" id="email" placeholder="Email" required>
+        <input type="password" class="input form-control" id="password" placeholder="Password">
+        <input type="password" class="input form-control" id="Cpassword" placeholder="Confirm Password">
+      </div>
+      <button type="button" class="btn btn-dark " onclick="passwordQuery()">CREATE ACCOUNT</button>
+      <h4 class="infoSingIn">Already have an account? <a class="signInLink" href="signin.html">Sign In</a></h4>
+      <p class="erorInfo" id="eror"></p>
+    </div>
+
+  </main>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <script>
+
+    function passwordQuery() {
+
+      const password = document.getElementById("password").value;
+      const Cpassword = document.getElementById("Cpassword").value;
+
+      if (password != Cpassword) {
+        document.getElementById("password").style.borderColor = "black";
+        document.getElementById("Cpassword").style.borderColor = "black";
+        document.getElementById("password").style.backgroundColor = "#db2b27";
+        document.getElementById("Cpassword").style.backgroundColor = "#db2b27";
+        document.getElementById("eror").innerHTML = "Passwords do not match";
+      }
+      else {
+        document.getElementById("password").style.backgroundColor = "#fff";
+        document.getElementById("Cpassword").style.backgroundColor = "#fff";
+        document.getElementById("eror").innerHTML = "";
+      }
+    }
+  </script>
+</body>
+
+</html>
